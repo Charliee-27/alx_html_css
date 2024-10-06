@@ -3,58 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="1-styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Headphones</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="logo.png" alt="logo">
-            <ul>
-                <li><a href="#"></a>what we do</li>
-                <li><a href="#"></a>our results</li>
-                <li><a href="#"></a>contact us</li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <div>
-            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-            <p>Lorem ipsum dolor set amet</p>
-
-            <button>CALL TO ACTION</button>
-
-            <p>Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet</p>
+    <div class="background">
+        <div class="container">
+            <header>
+                <nav>
+                    <img src="images/logo_headphones.png" alt="logo" width="200px" height="auto">
+                    <ul>
+                        <li><a href="#">what we do</a></li>
+                        <li><a href="#">our results</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                    </div>
+                </nav>
+            </header>
+            <section class="hero">
+                <div>
+                    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+                    <p>Lorem ipsum dolor set amet lorem ipsum Lorem ipsum</p>
+                    <button class="cta">Call to Action</button>
+                    <p>Lorem ipsu ipsum dolor set amet loremolor sesumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lLorem ipsum dolor set amet lorem ipsumLore
+            </section>
         </div>
-    </section>
+    </div>
 
-    <section>
-        <div>
-            <h2>What we do...</h2>
-            <p>Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet</p>
+    <div class="container">
+        <div class="whatwedo">
+            <h2>What we do</h2>
+            <p>Lorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsumLorem ipsum dolor set amet lorem ipsum</p>
         </div>
-        <div>
-            <div>
-                <img src="#" alt="icon">
+        <div class="service">
+            <div class="icon">
+                <img src="images/Sound.png" alt="sound icon">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor set ametLorem ipsum dolor set amet</p>
+                <p>Lorem ipsum dolor set amet lorem ipsumLorem ipsum dolor </p>
             </div>
-            <div>
-                <img src="#" alt="icon">
+            <div class="icon">
+                <img src="images/Media.png" alt="media player">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor set ametLorem ipsum dolor set amet</p>
+                <p>Lorem ipsum dolor set amet lorem ipsumLorem ipsum dolor </p>
             </div>
-            <div>
-                <img src="#" alt="icon">
+            <div class="icon">
+                <img src="images/music.png" alt="Music icon">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor set ametLorem ipsum dolor set amet</p>
+                <p>Lorem ipsum dolor set amet lorem ipsumLorem ipsum dolor </p>
             </div>
-            <div>
-                <img src="#" alt="icon">
+            <div class="icon">
+                <img src="images/ear.png" alt="ear">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor set ametLorem ipsum dolor set amet</p>
+                <p>Lorem ipsum dolor set amet lorem ipsumLorem ipsum dolor </p>
             </div>
         </div>
-    </section>
+    </div>
+
+    </div>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight = "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+   </script>
+<script src="https://kit.fontawesome.com/fcf146eec1.js" crossorigin="anonymous">
+</script>
+
 </body>
 </html>
